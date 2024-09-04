@@ -1,0 +1,10 @@
+document.querySelectorAll('.feature-box').forEach(box => {
+    box.addEventListener('mouseover', () => {
+        document.getElementById('feature-image').style.opacity = '1';
+    });
+    box.addEventListener('mouseout', () => {
+        document.getElementById('feature-image').style.opacity = '0';
+    });
+});
+
+

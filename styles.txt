@@ -1,0 +1,18 @@
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Lightning bolt color */
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-button:hover {
+    background-color: #e6b800; /* Slightly darker color on hover */
+}

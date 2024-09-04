@@ -1,0 +1,142 @@
+
+/* General Styles */
+body {
+    background: url('img/BWSCySecWall2.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #FFF;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+/* Header Styles */
+.header {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    background-color: #000; /* Ensure header background is black */
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3em;
+    color: #FFF; /* White text for the title */
+    letter-spacing: 2px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #FFF; /* White text for the motto */
+    margin-top: 10px;
+}
+
+/* Scrolling Banner */
+.scrolling-banner {
+    background-color: #000; /* Black background for banner */
+    padding: 10px 0;
+    overflow: hidden; /* Hide overflow */
+}
+
+.banner-content {
+    display: inline-block;
+    white-space: nowrap; /* Prevent text wrapping */
+    animation: scroll 15s linear infinite; /* Scroll animation */
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Intro Section */
+.intro {
+    padding: 40px 20px;
+    background-color: #000; /* Ensure section background is black */
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    color: #FFF; /* White text for the section header */
+    margin: 0;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: #000;
+    position: relative; /* Required for positioning the image */
+}
+
+.feature-box {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    position: relative; /* Needed for proper positioning */
+}
+
+.feature-box:hover {
+    transform: scale(1.05); /* Slightly enlarge the feature box on hover */
+}
+
+.image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Initially hide the image */
+    width: 50%; /* Adjust as needed */
+    max-width: 400px; /* Adjust as needed */
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Display image on hover */
+.feature-box:hover ~ .image-container {
+    opacity: 1; /* Show image when any feature box is hovered */
+}
+
+a {
+    color: #FFF; /* White text */
+    text-decoration: none; /* Remove underline */
+    margin: 10px 0; /* Space between links */
+    display: inline-block; /* Make the link inline */
+}
+
+a i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+a:hover {
+    color: #CCC; /* Lighter text on hover */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #000; /* Black footer */
+    padding: 20px 0;
+    text-align: center; /* Center text inside footer */
+    color: #FFF; /* Ensure footer text is readable */
+}
