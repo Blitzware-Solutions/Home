@@ -134,9 +134,11 @@ a:hover {
 
 
 /* Footer Styles */
-footer {
-    background-color: #000; /* Black footer */
-    padding: 20px 0;
-    text-align: center; /* Center text inside footer */
-    color: #FFF; /* Ensure footer text is readable */
+footer a {
+    color: #00f; /* Default blue for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ccc; /* Slight color change on hover */
 }
