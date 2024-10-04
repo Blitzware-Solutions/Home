@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Solutions - BlitzWare Solutions</title>
+    <style>
+        body {
+            background-color: #000; /* Set the entire background to black */
+            color: #FFF; /* White text for readability */
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            text-align: center;
+            min-height: 100vh; /* Ensure the body takes full height */
+            display: flex;
+            flex-direction: column; /* To allow footer to stay at the bottom */
+        }
+
+        .header {
+            padding: 20px;
+            background-color: #111; /* Darker header */
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin: 0; /* Remove default margin for better spacing */
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .content {
+            padding: 40px 20px;
+            flex-grow: 1; /* This will take the remaining space */
+            background-color: #000; /* Ensuring the content area is black */
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .solution-box {
+            background-color: #111; /* Dark box for each solution */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .solution-box:hover {
+            transform: scale(1.05); /* Slight hover effect */
+        }
+
+        footer {
+            background-color: #111; /* Dark footer */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #CCC;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Our Solutions</h1>
+        <p>Comprehensive IT & Cybersecurity Services</p>
+    </div>
+
+    <div class="content">
+        <h2>Explore Our Tailored Solutions</h2>
+        <div class="solution-box">
+            <h3>Network Security & Monitoring</h3>
+            <p>24/7 proactive threat detection and network monitoring to keep your business secure.</p>
+        </div>
+        <div class="solution-box">
+            <h3>Incident Response & Recovery</h3>
+            <p>Lightning-fast incident response to mitigate damage and ensure a full recovery.</p>
+        </div>
+        <div class="solution-box">
+            <h3>Custom AI Integration</h3>
+            <p>Leverage the power of AI to enhance your business operations and security protocols.</p>
+        </div>
+        <div class="solution-box">
+            <h3>Penetration Testing</h3>
+            <p>In-depth testing to identify vulnerabilities before malicious actors can exploit them.</p>
+        </div>
+        <!-- Add more solutions as needed -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BlitzWare Solutions. All rights reserved.</p>
+        <p><a href="mailto:info@blitzwaresolutions.com"><i class="fas fa-envelope"></i> Email Us</a></p>
+        <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
